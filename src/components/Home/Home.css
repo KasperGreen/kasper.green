@@ -1,0 +1,125 @@
+body {
+  overflow: hidden;
+}
+
+.Home {
+  width: 100vw;
+  height: 100vh;
+  background: #111;
+  overflow: hidden;
+  &-mandala {
+    z-index: 1;
+    transform: rotate(0);
+    transition: transform 10s linear;
+    content: '';
+    position: absolute;
+    top: 0;
+    background: url(./images/mandala.png) no-repeat center center transparent;
+    background-size: contain;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    &:hover {
+      transform: rotate(360deg);
+    }
+  }
+
+  &:after {
+    z-index: 3;
+    pointer-events: none;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+    background-color: red;
+    animation: overflowing 22s cubic-bezier(0.64, -0.44, 0.51, 1.68) infinite;
+  }
+  a, button {
+    background: transparent;
+    border: none;
+    transition: opacity .8s cubic-bezier(0, 0, 0, .99);
+    opacity: 0;
+  }
+  a, button, a:hover, a:visited, a:active {
+
+    z-index: 3;
+    display: block;
+    font-family: 'Marck Script', sans-serif;
+    text-decoration: none;
+    color: white;
+    padding: .8em;
+    font-size: 8vmin;
+    position: absolute;
+  }
+  &-contacts {
+    right: 0;
+    top: 0;
+    color: #FFAAAA !important;
+  }
+  &-gallery {
+    right: 0;
+    bottom: 0;
+    color: #AAFFAA !important;
+  }
+  &-process {
+    left: 0;
+    bottom: 0;
+    color: #AAAAFF !important;
+  }
+  &-shop {
+    top: 0;
+    left: 0;
+    color: #FFFFAA !important;
+  }
+  a:hover, button:hover {
+    color: white !important;
+    cursor: pointer;
+  }
+  a:focus, button:focus {
+    outline: 0;
+    transition: transform .12s cubic-bezier(0, 0, 0, .99);
+    transform: scale(1.08);
+  }
+  &-show_menu {
+    a, button {
+      opacity: 1;
+    }
+  }
+}
+
+@keyframes overflowing {
+  0% {
+    background-color: #00678d;
+  }
+  12% {
+    background-color: rgb(5, 141, 203);
+  }
+  24% {
+    background-color: rgb(3, 46, 190);
+  }
+  36% {
+    background-color: rgb(189, 18, 112);
+  }
+  48% {
+    background-color: rgb(183, 202, 0);
+  }
+  60% {
+    background-color: rgb(0, 150, 100);
+  }
+  72% {
+    background-color: rgb(18, 145, 16);
+  }
+  84% {
+    background-color: white;
+  }
+  96% {
+    background-color: red;
+  }
+  100% {
+    background-color: #00678d;
+  }
+}
+

@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  background: #111;
+}
+
+html {
+  color: #111;
+  font-size: calc(100vw / 1280 * 10);
+  font-family: Montserrat, sans-serif;
+
+  @media (--desktop) {
+    font-size: 10Px;
+  }
+  @media (--mobile) {
+    font-size: calc(100vw / 620 * 10);
+  }
+}
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  background: #111;
+  color: #fefefe;
+  font-size: 16px;
+
+
+}
+
+body:not(.detected_keyboard_user) {
+  outline: none;
+}
