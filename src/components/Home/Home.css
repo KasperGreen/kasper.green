@@ -7,39 +7,17 @@ body {
   height: 100vh;
   background: #111;
   overflow: hidden;
-  &-mandala {
-    z-index: 1;
-    transform: rotate(0);
-    transition: transform 10s linear;
-    content: '';
-    position: absolute;
-    top: 0;
-    background: url(./images/mandala.png) no-repeat center center transparent;
-    background-size: contain;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    &:hover {
-      transform: rotate(360deg);
-    }
-  }
+  background: url(./images/bg.jpg) top center no-repeat;
+  background-size: cover;
 
-  &:after {
-    z-index: 3;
-    pointer-events: none;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    mix-blend-mode: multiply;
-    background-color: red;
-    animation: overflowing 22s cubic-bezier(0.64, -0.44, 0.51, 1.68) infinite;
-  }
   a, button {
     background: transparent;
-    border: none;
+    padding: 0.4em;
+    font-size: 8vmin;
+    position: absolute;
+    margin: .8em;
+    border: 1px solid;
+    border-radius: 0.2em;
     transition: opacity .8s cubic-bezier(0, 0, 0, .99);
     opacity: 0;
   }
@@ -50,14 +28,13 @@ body {
     font-family: 'Marck Script', sans-serif;
     text-decoration: none;
     color: white;
-    padding: .8em;
-    font-size: 8vmin;
+    font-size: 4.2vmin;
     position: absolute;
   }
   &-contacts {
     right: 0;
     top: 0;
-    color: #FFAAAA !important;
+    color: #aefaae !important;
   }
   &-gallery {
     right: 0;

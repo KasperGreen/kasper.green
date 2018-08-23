@@ -13,11 +13,10 @@ import _, { debounce } from 'lodash'
 import { hot } from 'react-hot-loader'
 import PageNotFound from 'containers/PageNotFound'
 import HomeContainer from 'containers/HomeContainer/HomeContainer'
-import mandala_image from 'components/Home/images/mandala.png'
 import ContactsContainer from 'containers/ContactsContainer'
 import Transitions from './transitions'
 import { Green, Yellow } from './Page'
-import Fullscreen from 'react-fullscreen-crossbrowser';
+import Fullscreen from 'react-fullscreen-crossbrowser'
 
 const PageTransitionContext = React.createContext({})
 
@@ -29,7 +28,6 @@ perspective: 1200px;
 
 class App extends Component {
   state = {
-    mandala_is_loaded: false,
     last_mouse_active_time: new Date(),
     isFullscreenEnabled: false
   }
@@ -39,11 +37,7 @@ class App extends Component {
       setPrevPage,
       setActivePage,
       toggleFullScreen,
-      state: {
-        mandala_is_loaded,
-      }
     } = this
-    if (!mandala_is_loaded) return false
 
     return (
       <AppContext.Provider
@@ -120,6 +114,10 @@ class App extends Component {
     )
 
   }
+  removePreloadedStyles = () => {
+    const preload_styles = document.getElementById('preload_styles')
+    if (preload_styles) preload_styles.remove()
+  }
   setActivePage = (active_page) => {
     this.setState(
       (state) => {
@@ -145,34 +143,17 @@ class App extends Component {
       (state) => {
         return {
           ...state,
-          isFullscreenEnabled: value ? value :!isFullscreenEnabled
+          isFullscreenEnabled: value ? value : !isFullscreenEnabled
 
         }
       }
     )
   }
-  waitMandalaLoad = () => {
-    const image = new Image()
-    image.src = mandala_image
-    image.onload = () => {
-      const preload_styles = document.getElementById('preload_styles')
-      if (preload_styles) preload_styles.remove()
-      this.setState(
-        (state) => {
-          return {
-            ...state,
-            mandala_is_loaded: true
-          }
-        }
-      )
-    }
-
-  }
 
   componentDidMount () {
     document.addEventListener('click', this.mouseUserEvent)
     document.addEventListener('keydown', this.keyboardUserEvent)
-    this.waitMandalaLoad()
+    this.removePreloadedStyles()
     document.getElementsByTagName('body')[0].addEventListener('mousemove', debounce(this.mousemove, 108))
   }
 }

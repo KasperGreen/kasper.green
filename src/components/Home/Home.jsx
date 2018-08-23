@@ -10,15 +10,6 @@ export default class Home extends Component {
     is_show_menu: true
   }
 
-  toggleFullScreen = () => {
-    const {
-      props: {
-        toggleFullScreen
-      }
-    } = this
-    toggleFullScreen()
-  }
-
   render () {
     const {
       state: {
@@ -26,8 +17,7 @@ export default class Home extends Component {
       },
       props: {
         history
-      },
-      toggleFullScreen
+      }
     } = this
     return (
       <div
@@ -38,7 +28,6 @@ export default class Home extends Component {
           }
         )}
       >
-        <div className='Home-mandala' onClick={toggleFullScreen} />
         <button
           className='Home-contacts'
           onClick={() => history.push({pathname: '/contacts', state: scale})}
@@ -103,6 +92,14 @@ export default class Home extends Component {
       )
     }
 
+  }
+  toggleFullScreen = () => {
+    const {
+      props: {
+        toggleFullScreen
+      }
+    } = this
+    toggleFullScreen()
   }
 
   componentDidMount () {

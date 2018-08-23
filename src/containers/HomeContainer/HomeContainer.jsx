@@ -8,11 +8,9 @@ export default class HomeContainer extends Component {
   render () {
     const {
       props: {
-        mandala_is_loaded,
         history
       }
     } = this
-    if (!mandala_is_loaded) return false
 
     return (
       <Wrapper>

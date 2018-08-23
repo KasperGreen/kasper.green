@@ -84,7 +84,7 @@ export default class Contacts extends Component {
                 background_image={bg5}
                 image_url={blogger_image}
                 title={'blogger.com'}
-                url={'https://KasperGreen.blogger.com'}
+                url={'https://KasperGreen.blogspot.com'}
               />
             </li>
             <li {...{onMouseEnter}}>
@@ -92,7 +92,7 @@ export default class Contacts extends Component {
                 background_image={bg6}
                 image_url={gplus_image}
                 title={'plus.google.com'}
-                url={'https://google.com/+KasperGreen'}
+                url={'https://plus.google.com/+KasperGreen'}
               />
             </li>
             <li {...{onMouseEnter}}>
@@ -108,7 +108,7 @@ export default class Contacts extends Component {
                 background_image={bg8}
                 image_url={habr_image}
                 title={'habr.com'}
-                url={'https://habr.com/KasperGreen'}
+                url={'https://habr.com/users/KasperGreen/'}
               />
             </li>
           </ul>
