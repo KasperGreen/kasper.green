@@ -17,7 +17,10 @@ export default ({ transition = '', duration = 0, pageKey, children }) => (
   </TransitionGroup>
 )
 
+export { default as scale_left } from './scale_left'
+export { default as scale_right } from './scale_right'
 export { default as slide_left } from './slide_left'
 export { default as slide_right } from './slide_right'
-export { default as scale } from './scale'
-export { default as scale_right } from './scale_right'
+export { default as slide_top } from './slide_top'
+export { default as slide_bottom } from './slide_bottom'
+export { default as fade } from './fade'

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { scale, slide_left as slide } from './transitions'
+import { slide_left, slide_right } from './transitions'
 
 export const Wrapper = styled.div`
 width: 100vw;
@@ -38,8 +38,8 @@ const Page = ({history, to, ...props}) => (
   <Wrapper {...props}>
     <h1>Dynamic transitions</h1>
     <div>
-      <Button onClick={() => history.push({pathname: to, state: slide})}>Slide</Button>
-      <Button onClick={() => history.push({pathname: to, state: scale})}>Scale</Button>
+      <Button onClick={() => history.push({pathname: to, state: slide_right})}>Slide</Button>
+      <Button onClick={() => history.push({pathname: to, state: slide_left})}>Scale</Button>
     </div>
     <Footer>
       <a href='https://github.com/nicgirault/dynamic-transitions'>Source code</a>

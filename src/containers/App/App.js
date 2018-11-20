@@ -15,8 +15,8 @@ import PageNotFound from 'containers/PageNotFound'
 import HomeContainer from 'containers/HomeContainer/HomeContainer'
 import ContactsContainer from 'containers/ContactsContainer'
 import Transitions from './transitions'
-import { Green, Yellow } from './Page'
 import Fullscreen from 'react-fullscreen-crossbrowser'
+import WhatHourContainer from 'containers/WhatHourContainer'
 
 const PageTransitionContext = React.createContext({})
 
@@ -60,8 +60,7 @@ class App extends Component {
                   <Transitions pageKey={location.key} {...location.state}>
                     <Switch location={location}>
                       <Route path={'/'} exact component={HomeContainer} />
-                      <Route path='/green' component={Green} />
-                      <Route path='/yellow' component={Yellow} />
+                      <Route path={'/what-hour'} component={WhatHourContainer} />
                       <Route path={'/contacts'} exact component={ContactsContainer} />
                       <Route component={PageNotFound} />
                     </Switch>

@@ -7,7 +7,10 @@ body {
   height: 100vh;
   background: #111;
   overflow: hidden;
-  background: url(./images/bg.jpg) top center no-repeat;
+  background: url(./images/new_bg.jpg) top center no-repeat;
+  @media(orientation: portrait) {
+    background-image: url(./images/portrait.jpg);
+  }
   background-size: cover;
 
   a, button {

@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import './Home.css'
 import appContextConnector from 'context/appContextConnector'
 import classNames from 'classnames'
-import { scale } from 'containers/App/transitions'
+import { slide_left, slide_right } from 'containers/App/transitions'
+import { Link } from 'react-router-dom'
 
 @appContextConnector
 export default class Home extends Component {
@@ -14,9 +15,6 @@ export default class Home extends Component {
     const {
       state: {
         is_show_menu
-      },
-      props: {
-        history
       }
     } = this
     return (
@@ -28,15 +26,19 @@ export default class Home extends Component {
           }
         )}
       >
-        <button
+        <Link
           className='Home-contacts'
-          onClick={() => history.push({pathname: '/contacts', state: scale})}
+          to={{pathname: '/contacts', state: slide_left}}
         >
           Контакты
-        </button>
+        </Link>
+        <Link
+          className='Home-what-hour'
+          to={{pathname: '/what-hour', state: slide_right}}
+        >Который час‽</Link>
         {/*
         <Link
-          className='Home-gallery'
+          className='Home-what-hour'
           to={'/gallery'}
         >
           Галлерея

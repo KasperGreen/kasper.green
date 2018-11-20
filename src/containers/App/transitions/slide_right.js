@@ -1,25 +1,30 @@
 import { injectGlobal, keyframes } from 'styled-components'
 
-const transitionClassName = 'slide'
-const duration = 1000
+const transitionClassName = 'slide_right'
+const duration = 420
 
-const slideOut = keyframes`
-0% { }
-25% { opacity: .5; transform: translateZ(-500px) translateX(200%); }
-75% { opacity: .5; transform: translateZ(-500px) translateX(200%); }
-100% { opacity: .5; transform: translateZ(-500px) translateX(200%); }
+const moveFromLeft = keyframes`
+from { transform: translateX(-100%); opacity: 1;}
 `
-const slideIn = keyframes`
-0%, 25% { opacity: .5; transform: translateZ(-500px) translateX(-200%); }
-75% { opacity: .5; transform: translateZ(-500px); }
-100% { opacity: 1; transform: translateZ(0) translateX(0); }
+const scaleDown = keyframes`
+to { transform: translateX(100%); opacity: 0;}
 `
+
 injectGlobal`
-.${transitionClassName}-exit-active {
-  animation: ${slideOut} ${duration}ms both ease;
+.${transitionClassName}-enter, .${transitionClassName}-exit {
+   height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .${transitionClassName}-enter-active {
-  animation: ${slideIn} ${duration}ms both ease;
+  animation: ${moveFromLeft} ${duration}ms cubic-bezier(0, 0, 0, .99) both;
+  z-index: 2;
+}
+.${transitionClassName}-exit-active {
+  animation: ${scaleDown} ${duration}ms cubic-bezier(0, 0, 0, .99) both;
+  z-index: 1;
 }
 `
 
