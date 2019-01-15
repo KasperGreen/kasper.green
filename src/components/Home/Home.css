@@ -7,11 +7,6 @@ body {
   height: 100vh;
   background: #111;
   overflow: hidden;
-  background: url(./images/new_bg.jpg) top center no-repeat;
-  @media(orientation: portrait) {
-    background-image: url(./images/portrait.jpg);
-  }
-  background-size: cover;
 
   a, button {
     background: transparent;
@@ -48,6 +43,11 @@ body {
   &-what-hour {
     color: #aefaae !important;
   }
+  &-cv {
+    color: #faf19c !important;
+    bottom: 0;
+    right: 0;
+  }
   &-process {
     left: 0;
     bottom: 0;
@@ -68,6 +68,9 @@ body {
     transform: scale(1.08);
   }
   &-show_menu {
+    figure {
+      opacity: .1;
+    }
     a, button {
       opacity: 1;
     }

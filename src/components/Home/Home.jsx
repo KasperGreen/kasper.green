@@ -2,8 +2,9 @@ import React, { Component } from 'react'
 import './Home.css'
 import appContextConnector from 'context/appContextConnector'
 import classNames from 'classnames'
-import { slide_left, slide_right } from 'containers/App/transitions'
+import { slide_bottom, slide_left, slide_right } from 'containers/App/transitions'
 import { Link } from 'react-router-dom'
+import HomeBackground from 'components/Home/_styles/HomeBackground'
 
 @appContextConnector
 export default class Home extends Component {
@@ -26,6 +27,7 @@ export default class Home extends Component {
           }
         )}
       >
+        <HomeBackground />
         <Link
           className='Home-contacts'
           to={{pathname: '/contacts', state: slide_left}}
@@ -36,6 +38,10 @@ export default class Home extends Component {
           className='Home-what-hour'
           to={{pathname: '/what-hour', state: slide_right}}
         >Который час‽</Link>
+        <Link
+          className='Home-cv'
+          to={{pathname: '/cv', state: slide_bottom}}
+        >Резюме</Link>
         {/*
         <Link
           className='Home-what-hour'
