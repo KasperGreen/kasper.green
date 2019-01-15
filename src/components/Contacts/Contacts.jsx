@@ -28,13 +28,10 @@ export default class Contacts extends Component {
 
   render () {
     const {
+      onMouseEnter,
       state: {
         background_blend_color
       },
-      props: {
-        history
-      },
-      onMouseEnter
     } = this
     return (
       <section className='Contacts'>
