@@ -17,13 +17,14 @@ import ContactsContainer from 'containers/ContactsContainer'
 import Transitions from './transitions'
 import Fullscreen from 'react-fullscreen-crossbrowser'
 import WhatHourContainer from 'containers/WhatHourContainer'
+import CV from 'containers/CV'
 
 const PageTransitionContext = React.createContext({})
 
 const Perspective = styled.div`
-width: 100vw;
-height: 100vh;
-perspective: 1200px;
+  width: 100vw;
+  height: 100vh;
+  perspective: 1200px;
 `
 
 class App extends Component {
@@ -62,6 +63,7 @@ class App extends Component {
                       <Route path={'/'} exact component={HomeContainer} />
                       <Route path={'/what-hour'} component={WhatHourContainer} />
                       <Route path={'/contacts'} exact component={ContactsContainer} />
+                      <Route path={'/cv'} exact component={CV} />
                       <Route component={PageNotFound} />
                     </Switch>
                   </Transitions>
