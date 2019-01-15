@@ -8,6 +8,8 @@ import { pluralize } from 'numeralize-ru'
 import StackWrapper from 'containers/CV/_styles/CV_StackWrapper'
 import InfoInnerWrapper from 'containers/CV/_styles/CV_InfoInnerWrapper'
 import ASCIIPhoto from 'containers/CV/ASCIIPhoto'
+import BackButton from 'components/BackButton/BackButton'
+import { slide_top } from 'containers/App/transitions'
 
 export default class CV extends Component {
   render () {
@@ -18,6 +20,7 @@ export default class CV extends Component {
     } = this
     return (
       <Wrapper>
+        <BackButton invert to_top to={{pathname: '/', state: slide_top}} />
         <PhotoWrapper>
           <figure>
             <img src={KG_photo_image} alt={'Фотопортрет меня'} />

@@ -18,7 +18,8 @@ import bg6 from './images/bg_6.jpg'
 import bg7 from './images/bg_7.jpg'
 import bg8 from './images/bg_8.jpg'
 import _ from 'lodash'
-import { scale_right } from 'containers/App/transitions'
+import { slide_right } from 'containers/App/transitions'
+import BackButton from 'components/BackButton/BackButton'
 
 export default class Contacts extends Component {
   state = {
@@ -41,7 +42,7 @@ export default class Contacts extends Component {
           className='Contacts-blend_layer'
           style={{background: background_blend_color}}
         />
-        <button onClick={() => history.push({pathname: '/', state: scale_right})} className='Contacts-back_button' />
+        <BackButton invert to_left to={{pathname: '/', state: slide_right}} />
         <header>
           <h1 className='Contacts-title'>Каспер Грин</h1>
         </header>

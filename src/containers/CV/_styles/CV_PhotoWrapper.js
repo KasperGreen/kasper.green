@@ -6,7 +6,7 @@ const StyledComponent = styled(({css, ...rest}) => <div {...rest} />)`
   float: left;
   max-width: 50%;
   position: relative;
-  opacity: .22;
+  opacity: .42;
   figure {
     margin: 0;
     padding: 0;
