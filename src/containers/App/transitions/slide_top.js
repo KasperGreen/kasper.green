@@ -1,7 +1,7 @@
 import { injectGlobal, keyframes } from 'styled-components'
 
 const transitionClassName = 'slide_top'
-const duration = 420
+const duration = 108
 
 const moveFromTop = keyframes`
 from { transform: translateY(-100%); }

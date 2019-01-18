@@ -1,7 +1,7 @@
 import { injectGlobal, keyframes } from 'styled-components'
 
 const transitionClassName = 'slide_right'
-const duration = 420
+const duration = 108
 
 const moveFromLeft = keyframes`
 from { transform: translateX(-100%); opacity: 1;}

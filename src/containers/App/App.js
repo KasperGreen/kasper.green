@@ -15,7 +15,7 @@ import PageNotFound from 'containers/PageNotFound'
 import HomeContainer from 'containers/HomeContainer/HomeContainer'
 import ContactsContainer from 'containers/ContactsContainer'
 import Transitions from './transitions'
-import Fullscreen from 'react-fullscreen-crossbrowser'
+import FullScreen from 'react-fullscreen-crossbrowser'
 import WhatHourContainer from 'containers/WhatHourContainer'
 import CV from 'containers/CV'
 
@@ -51,7 +51,7 @@ class App extends Component {
           }}
       >
         <Router>
-          <Fullscreen
+          <FullScreen
             enabled={this.state.isFullscreenEnabled}
             onChange={toggleFullScreen}
           >
@@ -70,7 +70,7 @@ class App extends Component {
                 </Perspective></PageTransitionContext.Provider>
               )}
             />
-          </Fullscreen>
+          </FullScreen>
         </Router>
       </AppContext.Provider>
     )
