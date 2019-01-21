@@ -33,7 +33,7 @@ export default class WhatHourContainer extends Component {
            </WhatHourFallbacWrapper>
            :
            <div>
-             Сейчас {text_hour} час от&nbsp;начала&nbsp;эпохи&nbsp;UNIX
+             Сейчас {text_hour}&nbsp;час от&nbsp;начала&nbsp;эпохи&nbsp;UNIX
            </div>
           }
         </div>
