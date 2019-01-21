@@ -34,18 +34,17 @@ export default class CV extends Component {
             <ul>
               <li>
                 <OptionTitle>Опыт ReactJS разработки:</OptionTitle> {react_seniority}
-                <small>(с декабря 2016)</small>
+                <small> (с декабря 2016)</small>
               </li>
               <li>
                 <StackWrapper>
                   <OptionTitle>Актуальный стек:&nbsp;</OptionTitle>
                   <ul>
-                    <li>ReactJS 16.7;</li>
+                    <li>ReactJS;</li>
                     <li>Apollo GraphQL;</li>
                     <li>new React context API;</li>
-                    <li>styled-components/emotion;</li>
-                    <li>react-router@4;</li>
-                    <li>pre/postCSS.</li>
+                    <li>emotion;</li>
+                    <li>react-router;</li>
                   </ul>
                 </StackWrapper>
               </li>
@@ -125,7 +124,7 @@ export default class CV extends Component {
 
     const fixed_years = ((now_Date - using_start_Date) / milliseconds_in_year).toFixed(1)
 
-    return String(fixed_years).replace('.', ',') + ' ' + pluralize(fixed_years, 'год', 'года', 'лет')
+    return String(fixed_years).replace('.', ',') + ' ' + pluralize(fixed_years, 'год', 'года', 'лет')
 
   }
 }
