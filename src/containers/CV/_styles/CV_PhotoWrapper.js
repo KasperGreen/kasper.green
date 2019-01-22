@@ -7,6 +7,7 @@ const StyledComponent = styled(({css, ...rest}) => <div {...rest} />)`
   max-width: 50%;
   @media(max-width: 640px) {
     max-width: 22%;
+    padding-top: 50vmin;
   }
   position: relative;
   opacity: .42;
