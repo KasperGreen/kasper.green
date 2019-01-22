@@ -34,6 +34,12 @@ const StyledComponent = styled(({css, ...rest}) => <div {...rest} />)`
     left: 0;
     color: #10ff5e;
     transition: all .22s ease-out;
+    @media(orientation: portrait) {
+      bottom: 0;
+      top: auto;
+      position: fixed;
+      height: auto;
+    }
   }
   img {
     opacity: .042;
