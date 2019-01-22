@@ -8,7 +8,9 @@ const StyledComponent = styled(({css, ...rest}) => <div {...rest} />)`
   @media(max-width: 640px) {
     max-width: 22%;
     padding-top: 50vmin;
-    transform: translateY(-50%);
+    img {
+      transform: translateY(-50%);
+    }
   }
   position: relative;
   opacity: .42;
