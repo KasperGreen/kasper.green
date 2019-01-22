@@ -42,6 +42,11 @@ export default class Home extends Component {
           className='Home-cv'
           to={{pathname: '/cv', state: slide_bottom}}
         >Резюме</Link>
+        <a
+          className='Home-elfafeya'
+          href={'https://elfafeya.art'}
+          target={'_blank'}
+        >Эльфафея Арт</a>
         {/*
         <Link
           className='Home-what-hour'

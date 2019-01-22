@@ -16,7 +16,7 @@ body {
     margin: .8em;
     border: 1px solid;
     border-radius: 0.2em;
-    transition: opacity .8s cubic-bezier(0, 0, 0, .99);
+    transition: opacity .8s cubic-bezier(0, 0, 0, .99), all .2s ease;
     opacity: 0;
   }
   figure {
@@ -24,20 +24,45 @@ body {
 
   }
   a, button, a:hover, a:visited, a:active {
-
+    transition: all .2s ease;
     z-index: 3;
     display: block;
     font-family: 'Marck Script', sans-serif;
     text-decoration: none;
     color: white;
-    font-size: 4.2vmin;
+    font-size: 7vmin;
+    @media (orientation: portrait) {
+      font-size: 6vmin;
+    }
     position: absolute;
     background: rgba(12, 12, 12, 0.42);
+  }
+  a {
+    &:active {
+      border-radius: .42em;
+    }
   }
   &-contacts {
     right: 0;
     top: 0;
-    color: #fffffe !important;
+    .Home & {
+      color: #fffffe;
+      border-right: none;
+      margin: .8em 0 .8em .8em;
+      border-radius: .2em 0 0 .2em;
+    }
+    &:hover {
+      .Home & {
+        color: #00d500 !important;
+      }
+    }
+  }
+  &-elfafeya {
+    bottom: 0;
+    left: 0;
+    color: #ffd4cf !important;
+    margin-bottom: 10vh !important;
+
   }
   &-gallery {
     right: 0;
@@ -45,12 +70,23 @@ body {
     color: #AAFFAA !important;
   }
   &-what-hour {
-    color: #aefaae !important;
+    .Home & {
+      color: #aefaae !important;
+      border-left: none;
+      margin: .8em .8em .8em 0;
+      border-radius: 0 .2em .2em 0;
+    }
   }
   &-cv {
-    color: #faf19c !important;
     bottom: 0;
     right: 0;
+    .Home & {
+      color: #faf19c !important;
+      border-bottom: none;
+      margin: .8em .8em 0 .8em;
+      border-radius: .2em .2em 0 0;
+      padding-bottom: calc(10vh + .4em);
+    }
   }
   &-process {
     left: 0;
@@ -65,10 +101,11 @@ body {
   a:hover, button:hover {
     color: white !important;
     cursor: pointer;
+    transform: scale(1.02);
   }
   a:focus, button:focus {
     outline: 0;
-    transition: transform .12s cubic-bezier(0, 0, 0, .99);
+    transition: transform .12s cubic-bezier(0, 0, 0, .99), all .2s ease;
     transform: scale(1.08);
   }
   &-show_menu {
