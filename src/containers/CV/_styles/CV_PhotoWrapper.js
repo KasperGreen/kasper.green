@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 const StyledComponent = styled(({css, ...rest}) => <div {...rest} />)`
   float: left;
   max-width: 50%;
-  z-index: -1;
+  z-index: 1;
   @media(max-width: 640px) {
     max-width: 22%;
     padding-top: 50vmin;

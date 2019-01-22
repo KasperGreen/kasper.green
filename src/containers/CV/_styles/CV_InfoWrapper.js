@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 
 const StyledComponent = styled(({css, ...rest}) => <section {...rest} />)`
     flex: 1;
+    z-index: 2;
     max-height: 100vh;
     overflow-y: auto;
     padding: 2em;
