@@ -5,6 +5,9 @@ import PropTypes from 'prop-types'
 const StyledComponent = styled(({css, ...rest}) => <div {...rest} />)`
   float: left;
   max-width: 50%;
+  @media(max-width: 640px) {
+    max-width: 22%;
+  }
   position: relative;
   opacity: .42;
   figure {
