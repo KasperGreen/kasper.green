@@ -82,7 +82,7 @@ export default class CV extends Component {
             </ul>
             <article>
               <h2>Опыт работы:</h2>
-              <pre>
+              <div>
 
 2018-2019 <a href={'https://sportvokrug.ru/sports'} target={'_blank'}>
                 https://sportvokrug.ru/sports
@@ -295,7 +295,7 @@ http://tapochek.net<br />
 * Ресурс по прежнему онлайн, но мне более не принадлежит.<br />
 <br />
 
-              </pre>
+              </div>
             </article>
           </InfoInnerWrapper>
         </InfoWrapper>
