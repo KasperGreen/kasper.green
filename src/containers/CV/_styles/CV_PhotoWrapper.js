@@ -15,6 +15,7 @@ const StyledComponent = styled(({css, ...rest}) => <div {...rest} />)`
   position: relative;
   opacity: .42;
   figure {
+  z-index: -1;
     margin: 0;
     padding: 0;
     &:hover {

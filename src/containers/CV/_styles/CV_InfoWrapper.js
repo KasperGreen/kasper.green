@@ -8,6 +8,27 @@ const StyledComponent = styled(({css, ...rest}) => <section {...rest} />)`
     overflow-y: auto;
     padding: 2em;
     font-weight: 300;
+    transition: all 108ms ease;
+    a {
+      color: #00bbff;
+      text-decoration: none;
+      &:visited {
+        color: #08ffbb;
+      }
+      &:focus {
+        color: #6cff0c;
+      }
+      &:hover {
+        color: #0cf2ff;
+        text-decoration: underline;
+      }
+      &:active {
+        transform: scale(1.08);
+        color: #00aaee;
+      }
+      
+      
+    }
     h1 {
     margin: 0 0 1em 0;
     padding: 1em 0 0 0 ;

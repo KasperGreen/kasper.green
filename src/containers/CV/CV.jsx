@@ -84,7 +84,9 @@ export default class CV extends Component {
               <h2>Опыт работы:</h2>
               <pre>
 
-2018-2019 https://sportvokrug.ru/sports<br />
+2018-2019 <a href={'https://sportvokrug.ru/sports'} target={'_blank'}>
+                https://sportvokrug.ru/sports
+              </a><br />
 ==============================<br />
 <br />
 Место работы в настоящее время.  Front-end Архитектор<br />
@@ -96,6 +98,7 @@ export default class CV extends Component {
 * apollo graphql;<br />
 * перевёл глобальный стейт приложения с redux на React context API;<br />
 * подготовил UI для повторного использования;<br />
+* разработал компоненты форм на базе контекста;<br />
 * lazy-loading.<br />
 <br />
 <br />
@@ -183,6 +186,7 @@ https://github.com/KasperGreen/sun-spirit<br />
 * начал использовать package.json и css-modules;<br />
 * возглавлял UI команду. Разработал компонент-декоратор для;<br />
 * коннекта с UI→API командой;<br />
+* первая версия компонента для быстрых UI форм;<br />
 * MoneyFormat компонент для рендера денежных сумм с настройками;<br />
 * pre/post-css.<br />
 <br />
@@ -256,6 +260,7 @@ https://github.com/KasperGreen/sun-spirit<br />
 * MVC;<br />
 * ООП;<br />
 * регулярные выражения;<br />
+* адаптивная вёрстка
 * REST API;<br />
 * рефакторинг (очень понравился Боб Мартин и его «Чистый Код»).<br />
 <br />
