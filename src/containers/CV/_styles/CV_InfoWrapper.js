@@ -42,7 +42,7 @@ const StyledComponent = styled(({css, ...rest}) => <section {...rest} />)`
   
   ul {
     list-style: none;
-    margin: 0;
+    margin: 0 0 1em 0;
     padding: 0;
     li {
       padding: 0;
@@ -51,6 +51,10 @@ const StyledComponent = styled(({css, ...rest}) => <section {...rest} />)`
         margin-left: 2em;
       }
     }
+  }
+  
+  details {
+  line-height: 1.42;
   }
   
   ${p => p.css};

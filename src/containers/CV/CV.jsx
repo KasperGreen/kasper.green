@@ -87,8 +87,8 @@ export default class CV extends Component {
                 <br />
                 <br />
                 <br />
-                2018-2019 <a href={'https://sportvokrug.ru/sports'} target={'_blank'}>
-                https://sportvokrug.ru/sports
+                2018-2019 <a href={'//sportvokrug.ru/sports'} target={'_blank'}>
+                {'//sportvokrug.ru'}
               </a><br />
                 ==============================<br />
                 <br />
@@ -107,17 +107,24 @@ export default class CV extends Component {
                 <br />
                 <br />
                 <br />
-                2018-2019 https://kasper.green<br />
+                2018-2019 <a href={'//kasper.green'} target={'_blank'}>
+                {'//kasper.green'}
+              </a><br />
                 ========================<br />
                 <br />
-                https://github.com/KasperGreen/kasper.green<br />
+                <a
+                  href={'//github.com/KasperGreen/kasper.green'}
+                  target={'_blank'}
+                >
+                  {'//github.com/KasperGreen/kasper.green'}
+                </a><br />
                 <br />
                 Личный сайт визитка. Платформа для экспериментов.<br />
                 <br />
                 <br />
                 <br />
                 <br />
-                2018-2019 https://elfafeya.art<br />
+                2018-2019 <a href={'//elfafeya.art'} target={'_blank'}>{'//elfafeya.art'}</a> <br />
                 ======================<br />
                 <br />
                 (доступ в репозиторий по запросу)<br />
@@ -131,7 +138,9 @@ export default class CV extends Component {
                 <br />
                 <br />
                 <br />
-                2018 https://potok.kasper.green<br />
+                2018 <a href={'//potok.kasper.green'} target={'_blank'}>
+                {'//potok.kasper.green'}
+              </a> <br />
                 ========================<br />
                 <br />
                 https://github.com/KasperGreen/artpotok<br />
@@ -151,7 +160,8 @@ export default class CV extends Component {
                 <br />
                 <br />
                 <br />
-                2018 https://sunspirit.kasper.green/<br />
+                2018 <a href={'//sunspirit.kasper.green'} target={'_blank'}>
+                {'//sunspirit.kasper.green'}</a> <br />
                 ===========================<br />
                 <br />
                 https://github.com/KasperGreen/sun-spirit<br />
@@ -169,7 +179,10 @@ export default class CV extends Component {
                 <br />
                 <br />
                 <br />
-                2018 работа в aic.ru<br />
+                2018 работа в <a href={"//aic.ru"} target={"_blank"}>
+                {'//aic.ru'}
+              </a>
+                <br />
                 ====================<br />
                 <br />
                 * Подписал соглашение о неразглашении;<br />
@@ -196,7 +209,9 @@ export default class CV extends Component {
                 <br />
                 <br />
                 <br />
-                2017 http://www.ratingruneta.ru<br />
+                2017 <a href={'//ratingruneta.ru'} target={'_blank'}>
+                {'//ratingruneta.ru'}
+              </a> <br />
                 ========================<br />
                 <br />
                 * Новый фронт на ReactJS;<br />
@@ -267,7 +282,9 @@ export default class CV extends Component {
                 * REST API;<br />
                 * рефакторинг (очень понравился Боб Мартин и его «Чистый Код»).<br />
                 <br />
-                В этом периоде был сделан сайт gips.pro.<br />
+                В этом периоде был сделан сайт <a href={"//gips.pro"} target={"_blank"}>
+                {"//gips.pro"}
+              </a> .<br />
                 В штате компании я занимался не только сайтом,<br />
                 но и IT направлением в целом.<br />
                 <br />
@@ -281,14 +298,18 @@ export default class CV extends Component {
                 * дизайн\вёрстка\программирование сайта;<br />
                 * Интернет-магазин с онлайн оплатой;<br />
                 * Полнотекстовый поиск на базе sphinxsearch;<br />
-                * Калькулятор https://gips.pro/index.php?target=calculator&id=7;<br />
+                * Калькулятор <a href={'//gips.pro/index.php?target=calculator&id=7'} target={'_blank'}>
+                {'//gips.pro/index.php?target=calculator&id=7'}
+              </a> ;<br />
                 * Фильтр по ГКЛ на главной;<br />
                 * CRUD для управления доставками.<br />
                 <br />
                 <br />
                 Так-же в этот период был владельцем ресурса с посещаемостью 40к хостов в сутки.<br />
                 <br />
-                http://tapochek.net<br />
+                <a href={"//tapochek.net"} target={"_blank"}>
+                  {"//tapochek.net"}
+                </a> <br />
                 <br />
                 * Познал кеширование<br />
                 * Познал легаси в виде движка основанного на phpBB2, на мне последующая его доработка новых и
