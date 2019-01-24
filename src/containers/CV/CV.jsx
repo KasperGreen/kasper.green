@@ -11,7 +11,7 @@ import ASCIIPhoto from 'containers/CV/ASCIIPhoto'
 import BackButton from 'components/BackButton/BackButton'
 import { slide_top } from 'containers/App/transitions'
 import KasperName from 'containers/CV/_styles/CV_KasperName'
-
+import Helmet from 'react-helmet'
 export default class CV extends Component {
   render () {
     const {
@@ -21,6 +21,9 @@ export default class CV extends Component {
     } = this
     return (
       <Wrapper>
+        <Helmet>
+          <title>Резюме Каспера</title>
+        </Helmet>
         <BackButton invert to_top to={{pathname: '/', state: slide_top}} />
         <PhotoWrapper>
           <figure>
@@ -30,7 +33,6 @@ export default class CV extends Component {
         </PhotoWrapper>
         <InfoWrapper>
           <InfoInnerWrapper>
-            <h1>Резюме</h1>
             <h2>ReactJS Middle Developer</h2>
             <ul>
               <li>

@@ -36,11 +36,12 @@ const StyledComponent = styled(({css, ...rest}) => <section {...rest} />)`
     text-align: center;
     }
     h2 {
-      margin: 0 0 1em 0;
+      margin: 2em 0 1em 0;
       color: #ffff6c;
     }
   
   ul {
+    font-size: 1.2em;
     list-style: none;
     margin: 0 0 1em 0;
     padding: 0;
@@ -54,7 +55,9 @@ const StyledComponent = styled(({css, ...rest}) => <section {...rest} />)`
   }
   
   details {
-  line-height: 1.42;
+    line-height: 1.42;
+    font-size: 1.2em;
+    font-family: monospace;
   }
   
   ${p => p.css};
