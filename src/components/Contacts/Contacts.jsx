@@ -20,6 +20,7 @@ import bg8 from './images/bg_8.jpg'
 import _ from 'lodash'
 import { slide_right } from 'containers/App/transitions'
 import BackButton from 'components/BackButton/BackButton'
+import Helmet from 'react-helmet'
 
 export default class Contacts extends Component {
   state = {
@@ -39,6 +40,9 @@ export default class Contacts extends Component {
           className='Contacts-blend_layer'
           style={{background: background_blend_color}}
         />
+        <Helmet>
+          <title>Контакты Каспера</title>
+        </Helmet>
         <BackButton invert to_left to={{pathname: '/', state: slide_right}} />
         <header>
           <h1 className='Contacts-title'>Каспер Грин</h1>

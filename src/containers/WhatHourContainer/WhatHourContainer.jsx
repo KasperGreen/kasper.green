@@ -4,6 +4,7 @@ import { slide_left } from 'containers/App/transitions'
 import BackButton from 'components/BackButton/BackButton'
 import numeralize from 'numeralize-ru'
 import WhatHourFallbacWrapper from 'containers/WhatHourContainer/WhatHourFallbacWrapper'
+import Helmet from 'react-helmet'
 
 export default class WhatHourContainer extends Component {
 
@@ -16,6 +17,11 @@ export default class WhatHourContainer extends Component {
 
     return (
       <Fragment>
+        <Helmet>
+          <title>
+            Сейчас {hour} час от начала эпохи UNIX
+          </title>
+        </Helmet>
         <BackButton
           invert
           to_right

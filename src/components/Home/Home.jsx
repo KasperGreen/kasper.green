@@ -5,6 +5,7 @@ import classNames from 'classnames'
 import { slide_bottom, slide_left, slide_right } from 'containers/App/transitions'
 import { Link } from 'react-router-dom'
 import HomeBackground from 'components/Home/_styles/HomeBackground'
+import Helmet from 'react-helmet'
 
 @appContextConnector
 export default class Home extends Component {
@@ -27,6 +28,9 @@ export default class Home extends Component {
           }
         )}
       >
+        <Helmet>
+          <title>Каспер Грин — официальный сайт UI/UX-программиста</title>
+        </Helmet>
         <HomeBackground />
         <Link
           className='Home-contacts'
