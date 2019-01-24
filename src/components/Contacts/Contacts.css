@@ -10,6 +10,9 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  header {
+    z-index: 1;
+  }
   &-blend_layer {
     position: absolute;
     left:0;
