@@ -1,6 +1,7 @@
 {
   "name": "kasper.green",
-  "version": "0.1.0",
+  "homepage" : "https://kasper.green",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "autoprefixer": "7.1.6",
